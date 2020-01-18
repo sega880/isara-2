@@ -41,6 +41,9 @@
 }
 /* 767px以下 */
 @media screen and (max-width:767px) {
+    header img {
+        width: 110px;
+    }
     .top {
         margin-top: 0;
     }
@@ -77,17 +80,16 @@
     .top .btn-greenW {
         padding: 13px 39px;
     }
+    .sub-ttl {
+        margin-bottom: 80px;
+    }
     h2 {
         font-size: 9vmin;
-        margin-bottom: 80px;
+        padding: 0 18px;
     }
     h2::before {
         width: 28%;
         right: 73%;
-    }
-    h2::after {
-        width: 28%;
-        left: 73%;
     }
     .service .flex {
         display: block;
