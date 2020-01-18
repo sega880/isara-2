@@ -13,9 +13,6 @@
     .top .flex > img {
         height: 100%;
     }
-    .top > .flex > div {
-        padding-top: 70px;
-    }
     .top-ttl {
         font-size: 29px;
     }
@@ -27,6 +24,9 @@
     }
     .about .flex:last-child {
         flex-flow: column;
+    }
+    .about .flex:last-child > div {
+        padding-top: 0;
     }
     .about img {
         max-width: none;
