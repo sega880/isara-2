@@ -1,0 +1,267 @@
+/* common */
+body {
+    color: #333333;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+img {
+    width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.7;
+}
+h2 {
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+h2::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 62%;
+    content: "";
+    background-color: #109954;
+    height: 4px;
+    width: 200px;
+    margin: auto;
+}
+h2::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 62%;
+    content: "";
+    background-color: #109954;
+    height: 4px;
+    width: 200px;
+    margin: auto;
+}
+section {
+    margin: 120px 0;
+}
+header,
+main {
+    box-sizing: border-box;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.flex {
+    display: flex;
+}
+.btn {
+    border-radius: 32px;
+    box-shadow: 3px 3px 10px #00000029;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 39px;
+    transition: all .3s ease-in;
+} 
+.btn-green {
+    background-color: #109954;
+    color: #fff;
+}
+.btn-green:hover {
+    background-color: #fff;
+    color: #109954;
+}
+.btn-greenW {
+    border: 2px solid #109954;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #109954;
+    padding: 13px 39px;
+}
+.btn-greenW:hover {
+    background-color: #109954;
+    color: #fff;
+}
+
+/* header */
+header {
+    padding: 18px 20px 18px;
+}
+header img {
+    width: 130px;
+}
+header .flex {
+    justify-content: space-between;
+}
+header .btn {
+    background-color: #FFE000;
+    color: #333333;
+    display: block;
+}
+header .btn:hover {
+    background-color: #ffc800;
+}
+
+/* main */
+.top-ttl {
+    font-size: 36px;
+}
+.top {
+    margin-top: 80px;
+}
+.top > .flex > div {
+    padding-top: 110px;
+}
+.top .flex > div,
+.top .flex > img {
+    width: 50%;
+}
+.top-ttl br {
+    display: none;
+}
+.top .top-ttl + p {
+    margin-top: 34px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+.top ul {
+    max-width: 400px;
+    justify-content: space-between;
+}
+.service {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.service .flex {
+    justify-content: space-between;
+}
+.service img {
+    max-width: 200px;
+}
+.service p {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.about {
+    padding: 0 70px;
+}
+.about .flex {
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.about p {
+    max-width: 450px;
+    margin-bottom: 26px;
+}
+.about img{
+    box-shadow: 0px 11px 20px #00000029;
+    max-width: 450px;
+    margin-left: 40px;
+}
+.about .flex:last-child img {
+    margin-left: 0;
+    margin-right: 40px;
+}
+.about h3 {
+    color: #109954;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.news {
+    padding: 0 40px;
+}
+.news > p {
+    text-align: center;
+    margin-top: 65px;
+}
+.news > p a {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+.news .flex img {
+    max-width: 300px;
+    margin: 10px 0;
+}
+.news .flex:nth-child(1) {
+    border-top: 1px solid #E8E8E8;
+}
+.news .flex {
+    border-bottom: 1px solid #E8E8E8;
+    color: #333333;
+}
+.news h3 {
+    margin-top: 20px;
+    line-height: 2.3;
+}
+.news h3 + p {
+    margin-top: 10px;
+}
+.news h3 span {
+    border: 2px solid #109954;
+    background-color: #fff;
+    border-radius: 16px;
+    color: #109954;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 23px 5px;
+    margin-left: 16px;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #E8E8E8;
+    box-sizing: border-box;
+    padding: 25px 20px 14px;
+    width: 100%;
+}
+footer .wrap > p {
+    text-align: center;
+}
+footer .wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+}
+footer .flex {
+    justify-content: space-between;
+}
+footer .flex > a img {
+    max-width: 70px;
+}
+footer ul a {
+    position: relative;
+    color: #333333;
+    font-size: 14px;
+    display: block;
+    padding-top: 25px;
+    margin-right: 36px;
+    transition: all .3s ease-in;
+}
+footer ul a:hover {
+    color: #a7a7a7;
+} 
+footer ul li:nth-child(4) a {
+    margin-right: 0;
+}
+footer ul a::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: -20px;
+    width: 1px;
+    height: 20px;
+    background-color: #333333;
+}
+footer ul li:nth-child(4) a::after {
+    content: none;
+}
